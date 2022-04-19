@@ -1,0 +1,19 @@
+<div class="info-cards-grid">
+
+  <div class="info-cards-grid_full-card" *ngFor="let card of cards" >
+    <div class="card"
+      [ngStyle]="{'background-image':card.bgImg} || {'background-color': card.bgColor} "
+    >
+
+    <a routerLink="">
+      <h4>{{card.title}}</h4>
+    </a>
+
+    </div>
+
+    <div class="infos">
+      <p>{{card.text}}</p>
+    </div>
+  </div>
+
+</div>

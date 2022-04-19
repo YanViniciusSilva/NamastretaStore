@@ -1,0 +1,43 @@
+  <div class="login-flutter_grid">
+    <div class="modal slideInDown">
+      <p>Login</p>
+      <form onsubmit="">
+        <input
+          type="text"
+          placeholder="Usuário"
+          id="email"
+          class="holder"
+        />
+        <input
+          type="password"
+          placeholder="Senha"
+          id="password"
+          class="holder"
+        />
+        <button
+          class="btn-login default-btn"
+          type="submit"
+        >Login
+        </button>
+      </form>
+
+      <p>ou</p>
+
+      <button
+      class="btn-login google-btn"
+      type="submit"
+      >Entrar com Google
+      </button>
+
+      <p>é novo por aqui?</p>
+
+      <button
+      class="btn-login default-outline-btn"
+      type="submit"
+      >Cadastre-se
+      </button>
+
+    </div>
+  </div>
+
+  <div class="overlay" (click)="this.globalFunctionsService.setLoginIsVisible()"></div>

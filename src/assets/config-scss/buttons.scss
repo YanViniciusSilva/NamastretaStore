@@ -1,0 +1,50 @@
+
+.default-btn{
+  margin: 0;
+  background-color: #3B4583;
+  color: #fff;
+  font-size: small;
+  font-weight: 600;
+  font-family: 'roboto', sans-serif;
+  border-radius: 5px;
+  border: none;
+  transition: opacity 0.5s ease;
+}
+
+.default-btn:hover{
+  opacity: 0.8;
+}
+
+.default-outline-btn{
+  margin: 0;
+  background-color: #fff;
+  color: #3B4583;
+  font-size: small;
+  font-weight: 600;
+  font-family: 'roboto', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #3B4583;
+  transition: all 0.5s ease;
+}
+
+.default-outline-btn:hover{
+  background-color: #3B4583;
+  color: #fff;
+}
+
+.google-btn{
+  margin: 0;
+  background-color: #fff;
+  color: #F23A29;
+  font-size: small;
+  font-weight: 600;
+  font-family: 'roboto', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #F23A29;
+  transition: all 0.5s ease;
+}
+
+.google-btn:hover{
+  background-color: #F23A29;
+  color: #fff;
+}

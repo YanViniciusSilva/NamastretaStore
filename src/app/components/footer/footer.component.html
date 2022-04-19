@@ -1,0 +1,15 @@
+<div class="footer">
+  <div class="footer_grid_sections">
+    <div class="sections" *ngFor="let menu of items">
+      <label>{{menu.Title}}</label>
+      <ul>
+        <li *ngFor="let submenu of menu.Options">
+          <a href="" target="_blank">{{submenu.option}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_developer-github">
+    <a>Namastreta - 2022 / developed by Yan Vinicius</a>
+  </div>
+</div>

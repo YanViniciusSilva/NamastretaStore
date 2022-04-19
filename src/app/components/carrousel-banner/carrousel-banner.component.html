@@ -1,0 +1,25 @@
+
+    <div class="mdb-carousel-item" *ngIf="Slides.length > 0">
+      <img
+        *ngFor=" let slide of Slides; let i=index"
+        [src]="slide.image"
+        [ngClass]="{'image-active': selectedIndex === i}"
+        class="fade"
+      />
+
+      <div *ngIf="indicators" class="carrousel-dot-container">
+        <span *ngFor="let dot of Slides; let i=index"
+          class="dot"
+          [ngClass]="{'active': selectedIndex === i}"
+          (click)="selectImage(i)"
+        >
+
+        </span>
+      </div>
+
+      <!-- <div *ngIf="controls" class="btn-carousel btn-prev">
+        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+      </div> -->
+    </div>
+
+

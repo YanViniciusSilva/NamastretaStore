@@ -1,0 +1,37 @@
+<div class="header">
+  <div class="header_grid">
+    <div class="logo">
+      <img src="../../../assets/svg/logo.svg"
+        alt="Namastreta"
+      />
+
+      <div class="icons">
+        <img src="../../../assets/icons/login-icon.png"
+          class="login"
+          (click)="LoginIsVisible()"
+        />
+
+
+        <img src="../../../assets/icons/bag-icon.png"
+          class="icon"
+          (click)="CartIsVisible()"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<hr/>
+
+<div class="login"
+*ngIf="this.globalFunctionsService.loginVisible"
+>
+<login-flutter></login-flutter>
+</div>
+
+<div class="cart"
+*ngIf="this.globalFunctionsService.cartVisible"
+>
+<cart></cart>
+</div>

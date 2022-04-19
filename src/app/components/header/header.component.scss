@@ -1,0 +1,73 @@
+@import '../../../assets/config-scss/animations.scss';
+
+.header{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+
+  &_grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin: 0 25%;
+    width: 100%;
+    max-width: 825px;
+
+
+    .logo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: calc(50% + 50px);
+
+
+      img{
+        height: 100px;
+        // margin-left: 25%;
+        // margin-right: 25%;
+      }
+
+      .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // margin-left: 25%;
+        // margin-right: 5%;
+
+        .icon{
+          height: 35px;
+          margin: 0 10px;
+          transition: all 0.5 ease;
+        }
+
+        .icon:hover{
+          opacity: 0.7;
+        }
+
+        .login{
+          height: 45px;
+          margin: 0 10px;
+          transition: all 0.5 ease;
+        }
+
+        .login:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+
+
+  }
+
+  hr{
+    width: 95%;
+    background-color: #000;
+    height: 2px;
+  }
+
+}
