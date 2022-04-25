@@ -1,0 +1,8 @@
+
+@mixin paragraphSubTitle($weight: 400, $font: 'roboto') {
+  font-family: $font;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: rem(14px);
+  line-height: 2;
+}

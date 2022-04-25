@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 220px;
-  max-height: 240px;
+  min-height: 220px;
+  max-height: 700px;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
@@ -96,4 +96,44 @@
     }
 
   }
+}
+
+@media(max-width: 500px) {
+  .info-cards-grid{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+
+    &_full-card{
+      height: 130px;
+      padding: 0px;
+
+      .card{
+        width: 99%;
+        margin-bottom: 10px;
+      }
+
+      .infos{
+        display: none;
+      }
+    }
+
+    &_full-card:hover{
+      // position: relative;
+
+      .card{
+        position: absolute;
+        animation: none;
+        opacity: 0.8;
+        width: 99%;
+        transform: translateY(0px);
+      }
+      .infos{
+        display: none;
+      }
+
+  }
+
+
+}
 }

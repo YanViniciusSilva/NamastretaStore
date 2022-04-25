@@ -12,7 +12,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { BooleanInput } from '@angular/cdk/coercion';
 import { InfoCardsComponent } from './components/info-cards/info-cards.component';
 import { LoginFlutterComponent } from './components/login-flutter/login-flutter.component';
-import { CartComponent } from './components/cart/cart.component'
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({

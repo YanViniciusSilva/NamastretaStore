@@ -1,0 +1,23 @@
+
+<div class="body">
+<products-filter></products-filter>
+
+<div class="products-grid">
+   <div class="products-grid_content"
+  *ngFor="let product of products"
+  >
+  <a routerLink="/Produtos/Detalhes">
+    <div class="product-img">
+      <img src="{{product.imgUrl}}"/>
+    </div>
+    <div class="description">
+      <input type="text" value="{{product.title}}" disabled="disabled" class="title" />
+      <label class="price">R${{product.price}}</label>
+    </div>
+
+  </a>
+  </div>
+
+</div>
+
+</div>

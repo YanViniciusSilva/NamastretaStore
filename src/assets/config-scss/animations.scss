@@ -5,7 +5,7 @@
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
@@ -29,13 +29,11 @@
     -webkit-transform: translateY(-10%);
     transform: translateY(-10%);
     visibility: visible;
-    transition: all 0.5s ease-in-out;
 
     }
     100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    transition: all 0.5s ease-in-out;
 
     }
 

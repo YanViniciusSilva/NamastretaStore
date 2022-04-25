@@ -1,0 +1,67 @@
+@import '../../../assets/config-scss/typography.scss';
+
+.products-filter{
+  display: inline-flex;
+  position: static;
+  // height: 510px;
+  width: 250px;
+  box-shadow: 0 6px 12px #dce1e1;
+  justify-content: left;
+  border-radius: 15px;
+  margin-top: 15px;
+  // margin-right: 20px;
+  // margin-left: 15%;
+
+  &_filters{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    // justify-content: center;
+
+    label{
+      margin: 10px auto;
+      @include paragraphSubTitle();
+      font-weight: 600;
+      color: #474646;
+    }
+
+    ul{
+      text-align: left;
+      list-style: none;
+      @include paragraphSubTitle();
+      padding: 0;
+      margin: 0 20px;
+
+    }
+
+    li{
+      width: 110px;
+
+      hr{
+        // display: none;
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.5s ease;
+        margin-top: -6px;
+        margin-left: 0;
+        color: #474646;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: #474646;
+    }
+
+    li:hover{
+      // text-decoration: underline 1.5px #474646;
+      hr{
+        visibility: visible;
+        transition-duration: 0.5s;
+        width: 100%;
+      }
+    }
+
+  }
+}

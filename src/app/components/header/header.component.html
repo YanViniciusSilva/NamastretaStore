@@ -1,11 +1,19 @@
 <div class="header">
   <div class="header_grid">
     <div class="logo">
-      <img src="../../../assets/svg/logo.svg"
-        alt="Namastreta"
-      />
+      <a routerLink="">
+        <img src="../../../assets/svg/logo.svg"
+          alt="Namastreta"
+          class="logo-img"
+        />
+      </a>
 
       <div class="icons">
+
+        <button routerLink="/Produtos" class="products-link" >
+          <img src="../../../assets/icons/cart-icon.png" style="width:25px;height:25px;"/>Produtos
+        </button>
+
         <img src="../../../assets/icons/login-icon.png"
           class="login"
           (click)="LoginIsVisible()"

@@ -25,9 +25,15 @@
       justify-content: space-between;
       width: calc(50% + 50px);
 
+      .logo-img:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+      }
+
 
       img{
         height: 100px;
+        transition: all 0.7s ease;
         // margin-left: 25%;
         // margin-right: 25%;
       }
@@ -36,8 +42,23 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        // margin-left: 25%;
-        // margin-right: 5%;
+
+        .products-link{
+          display: flex;
+          width: 100px;
+          border-radius: 30px;
+          color: #404040;
+          padding: 5px;
+          font-family: 'Roboto', sans-serif;
+          font-size: small;
+          align-items: center;
+          justify-content: center;
+          border: none;
+        }
+
+        .products-link:hover{
+          opacity: 0.7;
+        }
 
         .icon{
           height: 35px;
